@@ -15,6 +15,7 @@ vectorizer = joblib.load("tfidf_vectorizer.pkl")
 # Initialize NLTK tools
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('wordnet')
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
